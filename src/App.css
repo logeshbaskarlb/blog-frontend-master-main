@@ -1,0 +1,50 @@
+body{background-color: gold;
+
+ background-repeat: no-repeat;
+ background-size: 100%
+
+ 
+
+}
+   
+
+
+
+
+
+
+/* .MuiBox-root{background-color: url(https://msl-ltd.co.uk/wp-content/uploads/2016/10/shutterstock_451991974-1.jpg);} */
+.MuiBox-root{background-color:white}
+.MuiBox-root div{width:100%;}
+header{background: black !important;box-shadow:0 3px 7px #bbb8b8;position:fixed;top:0;width:100%;z-index:9;}
+main{margin-top:100px}
+header .MuiBox-root{background:none;}
+.css-1pxm6m2-MuiButtonBase-root-MuiButton-root{background:red !important;border-radius:10px;}
+button{border-radius:5px !important;padding:14px 0 !important;width:100%}
+input[type=email],
+input[type=password]{background:#fff;}
+.css-61a1wk-MuiTypography-root{font-size:2.75rem;}
+header a{color:#fff !important;opacity:1 !important;}
+button.css-djcg5u-MuiButtonBase-root-MuiIconButton-root,
+button.css-78trlr-MuiButtonBase-root-MuiIconButton-root{padding:10px !important;width:auto;}
+.css-k008qs{float:right;padding:10px;}
+.css-1t09iy9-MuiPaper-root-MuiAppBar-root{color: white !important}
+.css-1yr0nl-MuiButtonBase-root-MuiButton-root{background:#d5128e !important}
+.css-1q9ux04{background: #fff !important; box-shadow: 5px 5px 20px #ce0a964f;}
+.css-1o3jkkl-MuiButtonBase-root-MuiTab-root{color:#0b6e4f !important;position:relative;text-transform:none;transition:all .5s;}
+.css-p24c87-MuiButtonBase-root-MuiButton-root{color:#0b6e4f !important}
+.css-1xvinid{color:#0b6e4f !important}
+.css-1o2l9qz{background:#0b6e4f !important}
+.css-1sgtwq1{background:#0b6e4f !important}
+.css-7qxopy{color:#0b6e4f !important}
+.css-13887fw{color:#0b6e4f !important}
+
+
+
+@media (max-width: 768px) {
+    .MuiBox-root {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
