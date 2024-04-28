@@ -21,17 +21,23 @@ const AddBlog = () => {
   };
 
   const sendRequest = async () => {
-    const res = await axios
-
-      .post("https://blog-backend-master-main.onrender.com/api/blog/add", {
+    try {
+      const res = await axios.post("https://blog-backend-master-main.onrender.com/api/blog/add", {
         title: inputs.title,
         description: inputs.description,
         image: inputs.imageURL,
         user: localStorage.getItem("userId"),
-      })
-      .catch((err) => console.log(err));
-    const data = res.data;
-    return data;
+      });
+      
+      if (res && res.data) {
+        return res.data; // Return the data if available
+      } else {
+        throw new Error("Invalid response format"); // Handle unexpected response format
+      }
+    } catch (error) {
+      console.error("Error sending request:", error);
+      throw error; // Re-throw the error to handle it in the calling code
+    }
   };
 
   const handleSubmit = (e) => {

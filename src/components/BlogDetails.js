@@ -23,7 +23,7 @@ const BlogDetails = () => {
   const fetchDetails = async () => {
     const res = await axios
       
-      .get(`https://blog-backend-7e48.vercel.app/api/blog/${id}`)
+      .get(`https://blog-mern-stack-project.netlify.app/api/blog/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;
@@ -41,7 +41,7 @@ const BlogDetails = () => {
   const sendRequest = async () => {
     const res = await axios
       .put(
-        `https://blog-backend-master.onrender.com/api/blog/update/${id}`,
+        `https://blog-backend-master-main.onrender.com/api/blog/update/${id}`,
         {
           title: inputs.title,
           description: inputs.description,
